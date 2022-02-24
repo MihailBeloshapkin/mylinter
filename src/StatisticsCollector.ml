@@ -16,6 +16,7 @@ let countOfIfThen = ref 0
 let countOfMatch = ref 0
 let countOfLet = ref 0
 
+(** Update statistics. *)
 let add = function
   | LetExp -> countOfLet := !countOfLet + 1
   | IfThenElse -> countOfIfThen := !countOfIfThen + 1

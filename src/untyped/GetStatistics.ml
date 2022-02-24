@@ -22,6 +22,7 @@ open Ast_iterator
 
 type input = Ast_iterator.iterator
 
+(** Get statostics from the Ocaml AST*)
 let run _ fallback =
   { fallback with
     expr =
